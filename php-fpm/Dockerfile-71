@@ -27,6 +27,15 @@ MAINTAINER Mahmoud Zalt <mahmoud@zalt.me>
 # base image (https://github.com/Laradock/php-fpm).
 #
 
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends \
+    fonts-droid \
+    ttf-wqy-zenhei \
+    ttf-wqy-microhei \
+    fonts-arphic-ukai \
+    fonts-arphic-uming \
+  && rm -rf /var/lib/apt/lists/*
+
 #
 #--------------------------------------------------------------------------
 # Optional Software's Installation
