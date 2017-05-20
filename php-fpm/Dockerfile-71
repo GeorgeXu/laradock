@@ -32,8 +32,6 @@ RUN apt-get update \
     fonts-droid \
     ttf-wqy-zenhei \
     ttf-wqy-microhei \
-    fonts-arphic-ukai \
-    fonts-arphic-uming \
   && rm -rf /var/lib/apt/lists/*
 
 #

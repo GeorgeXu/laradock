@@ -37,5 +37,11 @@ COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 #--------------------------------------------------------------------------
 #
 
-RUN rm -r /var/lib/apt/lists/*
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends \
+    fonts-droid-fallback \
+    ttf-wqy-zenhei \
+    ttf-wqy-microhei \
+  && rm -rf /var/lib/apt/lists/*
+
 WORKDIR /etc/supervisor/conf.d/

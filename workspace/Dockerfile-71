@@ -29,10 +29,9 @@ MAINTAINER Mahmoud Zalt <mahmoud@zalt.me>
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
+    fonts-droid-fallback \
     ttf-wqy-zenhei \
     ttf-wqy-microhei \
-    fonts-arphic-ukai \
-    fonts-arphic-uming \
   && rm -rf /var/lib/apt/lists/*
 
 #
