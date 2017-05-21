@@ -42,6 +42,7 @@ RUN apt-get update \
     fonts-droid-fallback \
     ttf-wqy-zenhei \
     ttf-wqy-microhei \
+    fonts-font-awesome \
   && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /etc/supervisor/conf.d/
